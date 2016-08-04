@@ -11,7 +11,15 @@ docker build -t ansible-redis .
 
 Consume
 
-`docker run --name elasticsearch -d mrlesmithjr/redis`
+`default`
+```
+docker run --name elasticsearch -d -p 6379:6379 mrlesmithjr/redis
+```
+
+`define volume for persistent storage`
+```
+docker run --name elasticsearch -d -p 6379:6379 -v $PWD/.data:/data mrlesmithjr/redis
+```
 
 License
 -------
