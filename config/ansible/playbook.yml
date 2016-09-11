@@ -34,6 +34,7 @@
       apt:
         name: "redis-server"
         state: "present"
+        install_recommends: no
 
     - name: Ensuring /data Exists
       file:

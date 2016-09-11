@@ -13,12 +13,12 @@ Consume
 
 `default`
 ```
-docker run --name elasticsearch -d -p 6379:6379 mrlesmithjr/redis
+docker run --name redis -d -p 6379:6379 mrlesmithjr/redis
 ```
 
 `define volume for persistent storage`
 ```
-docker run --name elasticsearch -d -p 6379:6379 -v $PWD/.data:/data mrlesmithjr/redis
+docker run --name redis -d -p 6379:6379 -v $PWD/.data:/data mrlesmithjr/redis
 ```
 
 License
